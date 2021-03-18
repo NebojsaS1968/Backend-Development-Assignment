@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "id": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+      "uid": "0-0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+      "name": "Backend-Assingment",
+      "description": null,
+      "auth": null,
+      "events": null,
+      "variables": [],
+      "order": [
+        "7374fbbd-3f60-4ae0-a59e-15d1d0552b5a",
+        "5e59c4fc-5d74-4956-8788-c4b78644261b",
+        "f5899507-0d4d-4ade-9bba-085c9da4aae3",
+        "aa310c3d-86a1-4b4f-9aff-f52bb2e9fccc",
+        "5f78ba2d-c187-4ee9-91d5-5fba762b439f",
+        "41988099-b62f-456b-b055-41792bbc9c44",
+        "64b85a81-d797-4950-957e-d9304d060051"
+      ],
+      "folders_order": [],
+      "protocolProfileBehavior": {},
+      "createdAt": "2021-03-18T09:33:12.151Z",
+      "folders": [],
+      "requests": [
+        {
+          "id": "41988099-b62f-456b-b055-41792bbc9c44",
+          "uid": "0-41988099-b62f-456b-b055-41792bbc9c44",
+          "name": "DELETE all dreams",
+          "url": "http://localhost:3000/api/v1/dream",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": null,
+          "method": "DELETE",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+          "pathVariables": {}
+        },
+        {
+          "id": "5e59c4fc-5d74-4956-8788-c4b78644261b",
+          "uid": "0-5e59c4fc-5d74-4956-8788-c4b78644261b",
+          "name": "GET all dreams",
+          "url": "http://localhost:3000/api/v1/dream?type=sad&startDate=2021-03-18T11:29:52.333Z&endDate=2021-03-18T13:00:49.333Z",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": null,
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [
+            {
+              "key": "type",
+              "value": "sad",
+              "equals": true,
+              "description": "",
+              "enabled": true
+            },
+            {
+              "key": "startDate",
+              "value": "2021-03-18T11:29:52.333Z",
+              "equals": true,
+              "description": "",
+              "enabled": true
+            },
+            {
+              "key": "endDate",
+              "value": "2021-03-18T13:00:49.333Z",
+              "equals": true,
+              "description": "",
+              "enabled": true
+            }
+          ],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+          "pathVariables": {}
+        },
+        {
+          "id": "5f78ba2d-c187-4ee9-91d5-5fba762b439f",
+          "uid": "0-5f78ba2d-c187-4ee9-91d5-5fba762b439f",
+          "name": "UPDATE a dream",
+          "url": "http://localhost:3000/api/v1/dream/605328a5cb88c71ce0061b40",
+          "description": null,
+          "data": [],
+          "dataOptions": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "dataMode": "raw",
+          "headerData": null,
+          "method": "PATCH",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+          "rawModeData": "{\r\n    \"title\": 2\r\n}",
+          "pathVariables": {}
+        },
+        {
+          "id": "64b85a81-d797-4950-957e-d9304d060051",
+          "uid": "0-64b85a81-d797-4950-957e-d9304d060051",
+          "name": "DELETE dream by id",
+          "url": "http://localhost:3000/api/v1/dream/6053302cdd63f8141c5f7a66",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": null,
+          "method": "DELETE",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+          "pathVariables": {}
+        },
+        {
+          "id": "7374fbbd-3f60-4ae0-a59e-15d1d0552b5a",
+          "uid": "0-7374fbbd-3f60-4ae0-a59e-15d1d0552b5a",
+          "name": "GET all dream types",
+          "url": "http://localhost:3000/api/v1/dream/dreamtypes",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": null,
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+          "pathVariables": {}
+        },
+        {
+          "id": "aa310c3d-86a1-4b4f-9aff-f52bb2e9fccc",
+          "uid": "0-aa310c3d-86a1-4b4f-9aff-f52bb2e9fccc",
+          "name": "GET dream by id",
+          "url": "http://localhost:3000/api/v1/dream/605328a5cb88c71ce0061b40",
+          "description": null,
+          "data": null,
+          "dataOptions": null,
+          "dataMode": null,
+          "headerData": null,
+          "method": "GET",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+          "pathVariables": {}
+        },
+        {
+          "id": "f5899507-0d4d-4ade-9bba-085c9da4aae3",
+          "uid": "0-f5899507-0d4d-4ade-9bba-085c9da4aae3",
+          "name": "CREATE new dream",
+          "url": "http://localhost:3000/api/v1/dream",
+          "description": null,
+          "data": [],
+          "dataOptions": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "dataMode": "raw",
+          "headerData": null,
+          "method": "POST",
+          "pathVariableData": [],
+          "queryParams": [],
+          "auth": null,
+          "events": null,
+          "folder": null,
+          "currentHelper": null,
+          "helperAttributes": null,
+          "collectionId": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+          "rawModeData": "{\r\n    \"title\": \"My sad dream number 3\",\r\n    \"description\": \"I was watching gladiator\",\r\n    \"type\": \"sad\"\r\n}",
+          "pathVariables": {}
+        }
+      ]
+    }
+  ],
+  "environments": [
+    {
+      "id": "9d11d129-ede5-4137-a9f9-e1a6c1f803ea",
+      "name": "My Workspace - globals",
+      "values": []
+    }
+  ],
+  "headerPresets": [],
+  "globals": []
+}

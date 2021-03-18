@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "0351ea75-15b7-4cb3-9b02-5c4e041ec543",
+		"name": "Backend-Assingment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all dream types",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dream/dreamtypes",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dream",
+						"dreamtypes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all dreams",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dream?type=sad&startDate=2021-03-18T11:29:52.333Z&endDate=2021-03-18T13:00:49.333Z",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dream"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "sad"
+						},
+						{
+							"key": "startDate",
+							"value": "2021-03-18T11:29:52.333Z"
+						},
+						{
+							"key": "endDate",
+							"value": "2021-03-18T13:00:49.333Z"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE new dream",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"My sad dream number 3\",\r\n    \"description\": \"I was watching gladiator\",\r\n    \"type\": \"sad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET dream by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dream/605328a5cb88c71ce0061b40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dream",
+						"605328a5cb88c71ce0061b40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE a dream",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dream/605328a5cb88c71ce0061b40",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dream",
+						"605328a5cb88c71ce0061b40"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE all dreams",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dream",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dream"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE dream by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/api/v1/dream/6053302cdd63f8141c5f7a66",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"dream",
+						"6053302cdd63f8141c5f7a66"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
