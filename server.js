@@ -7,4 +7,15 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
+mongoose
+  .connect("mongodb://localhost:27017/dreams", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log("Connected to database..."))
+  .catch((err) => console.log(err));
+
+const dream = require("./routes/dream");
+app.use("/api/v1/dream", dream);
+
 app.listen(PORT, () => console.log(`Server listnening on port ${PORT}`));
