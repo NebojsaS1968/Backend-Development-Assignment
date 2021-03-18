@@ -1,10 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-const {
-  addDreamSchema,
-  updateDreamSchema,
-} = require("../middlewares/schemas/dream");
+const { addDreamSchema } = require("../middlewares/schemas/dream");
 
 const { validation } = require("../middlewares/validation");
 
@@ -27,10 +24,6 @@ router
   .post(validation(addDreamSchema), createNewDream)
   .delete(deleteAllDreams);
 
-router
-  .route("/:id")
-  .get(getDreamById)
-  .patch(validation(updateDreamSchema), updateDream)
-  .delete(deleteDream);
+router.route("/:id").get(getDreamById).patch(updateDream).delete(deleteDream);
 
 module.exports = router;
